@@ -14,7 +14,12 @@
 ################################################################################
 # Write your function below:
 # Body
-
+def right_justify(s):
+     distance = (70 - len(s))
+     print (distance * " " + s)
+ 
+right_justify("Cal")
+                                                                   Cal
 
 
 

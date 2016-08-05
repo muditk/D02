@@ -29,6 +29,21 @@
 # Write your functions below:
 # Body
 
+def do_twice(fobj1,v1):
+	fobj1(v1)
+	fobj1(v1)
+
+def print_twice(s):
+	print(s)
+	print(s)
+
+# do_twice(print_twice,'spam')
+
+def do_four(fobj2,v2):
+	do_twice(fobj2,v2)
+	do_twice(fobj2,v2)
+
+do_four(print_twice,'spam')
 
 
 

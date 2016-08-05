@@ -22,7 +22,24 @@
 ################################################################################
 # Write your functions below:
 # Body
+def is_triangle(a,b,c):
+    if a > b + c :
+        print "No"
+    elif c > a + b:
+        print "No"
+    elif b > a + c:
+        print "No"
+    else:
+        print "Yes"
 
+def sticks():
+    a = int (input("Enter length 1"))
+    print a
+    b = int (input("Enter length 2"))
+    print b
+    c = int (input("Enter length 3"))
+    print c
+    is_triangle(a,b,c)
 
 
 
@@ -45,6 +62,11 @@ def main():
     check_stick_lengths()
     """
     print("Hello World!")
+    is_triangle(1,2,3)
+    is_triangle(1,2,4)
+    is_triangle(1,5,3)
+    is_triangle(6,2,3)
+    sticks()
 
 
 
